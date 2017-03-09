@@ -8,12 +8,14 @@
   "scripts": {
     "start": "npm run build && node index.js",
     "build": "./node_modules/.bin/webpack",
-    "start-dev": "webpack-dev-server --content-base public/ --port 3000"
+    "start-dev": "webpack-dev-server --progress --inline --hot"
   },
   "dependencies": {
     "express": "^4.14.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -21,6 +23,7 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "css-loader": "^0.26.2",
+    "react-hot-loader": "^1.3.1",
     "style-loader": "^0.13.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
