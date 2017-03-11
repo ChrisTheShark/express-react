@@ -7,7 +7,9 @@ import Scoreboard from '../../src/containers/Scoreboard.js'
 import css from '../css/app.css';
 
 const store = createStore(
-  PlayerReducer
+  PlayerReducer,
+  window.devToolsExtension &&
+  window.devToolsExtension()
 );
 
 render(
